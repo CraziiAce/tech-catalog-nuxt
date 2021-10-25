@@ -1,5 +1,5 @@
 <template>
-<h1 class="font-extrabold text-center text-7xl pt-8" style="font-family: acumin-pro;">Logan Tech Catalog</h1> 
+<h1 class="font-extrabold text-center text-7xl pt-8" style="font-family: acumin-pro;">Logan Tech Catalog 1</h1> 
 </template>
 
 <script>
@@ -17,3 +17,9 @@ export default {head: {
 <style>
 
 </style>
+
+<script>
+export default {
+  middleware: 'auth'
+};
+</script>

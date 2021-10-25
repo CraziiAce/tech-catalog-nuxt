@@ -33,11 +33,31 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  
+  server: {
+    port: 80,
+  },
+
+  
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
+  ],
+
+  auth: {
+    strategies: {
+      google: {
+        clientId: '909450569518-a13qpdatseo5vodup53g2ll8ifa4pej9.apps.googleusercontent.com',
+        codeChallengeMethod: '',
+        responseType: 'code',
+        endpoints: {
+          token: 'https://8g4m6i.deta.dev/login', // some backend url to resolve your auth with google and give you the token back
+          userInfo: 'http://localhost/auth/user/' // the endpoint to get the user info after you recived the token 
+        },
+      },
+      },
+    }
   }
-}

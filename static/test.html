@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta
+      name="google-signin-client_id"
+      content="909450569518-a13qpdatseo5vodup53g2ll8ifa4pej9.apps.googleusercontent.com"
+    />
+  </head>
+  <body>
+    <div id="my-signin2"></div>
+    <script>
+      function onSuccess(googleUser) {
+        let token = googleUser.getAuthResponse().id_token;
+        // Store value of token in cookie "g_csrf_token"
+        console.log(JSON.stringify({ g_csrf_token: token }));
+        console.log("Logged in as: " + googleUser.getBasicProfile().getName());
+        fetch("https://8g4m6i.deta.dev/login", {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json; charset=utf-8"
+          },
+          body: JSON.stringify({
+            g_csrf_token: token
+          })
+        })
+          .then(response => response.json())
+          .then(data => (document.cookie = "session_token=" + data));
+      }
+      function onFailure(error) {
+        console.log(error);
+      }
+      function renderButton() {
+        gapi.signin2.render("my-signin2", {
+          scope: "profile email",
+          width: 240,
+          height: 50,
+          longtitle: true,
+          theme: "dark",
+          onsuccess: onSuccess,
+          onfailure: onFailure
+        });
+      }
+    </script>
+
+    <script
+      src="https://apis.google.com/js/platform.js?onload=renderButton"
+      async
+      defer
+    ></script>
+  </body>
+</html>

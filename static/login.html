@@ -7,10 +7,10 @@
   </head>
   <body>
     <div id="my-signin2"></div>
+    <script src="http://localhost/redirect.js"></script>
     <script>
       function onSuccess(googleUser) {
         let token = googleUser.getAuthResponse().id_token;
-        // Store value of token in cookie "g_csrf_token"
         console.log(JSON.stringify({ g_csrf_token: token }));
         console.log("Logged in as: " + googleUser.getBasicProfile().getName());
         fetch("https://8g4m6i.deta.dev/login", {
@@ -24,7 +24,25 @@
           })
         })
           .then(response => response.json())
-          .then(data => (document.cookie = "session_token=" + data));
+          .then(data => {
+            const split_token = data.split(".");
+            const token_payload = JSON.parse(atob(split_token[1]));
+            const expiry_date = new Date((token_payload.exp - 60) * 1000);
+
+            let session_cookie =
+              "session_token=" +
+              data +
+              "; expires=" +
+              expiry_date.toUTCString();
+
+            let theme_cookie = "theme=" + Math.floor(Math.random() * 3 + 1);
+
+            document.cookie = session_cookie;
+            document.cookie = theme_cookie;
+
+            console.log(session_cookie);
+            checkCookie("session_token", document);
+          });
       }
       function onFailure(error) {
         console.log(error);

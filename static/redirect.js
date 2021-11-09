@@ -1,8 +1,4 @@
-// parse cookie named param
-// if cookie is found, base64 decode it and parse it into an object
-// if cookie is not found, redirect to login page test.html
-function checkCookie(cookie_name, document) {
-    console.log("checkCookie running");
+async function checkCookie(cookie_name, document) {
     let name = cookie_name + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
@@ -11,19 +7,27 @@ function checkCookie(cookie_name, document) {
         while (c.charAt(0) == ' ') {
         c = c.substring(1);
         }
+
         if (c.indexOf(name) == 0) {
-            redirectToTheme("theme", document);
+            var fullSessionCookie = c.substring(name.length, c.length);
+            var cookieData = fullSessionCookie.split(".")[1]
+            b64decoded = atob(cookieData);
+            var json = JSON.parse(b64decoded);
+            if (json['iss'] == "Logan Tech Catalog") {
+                redirectToTheme("theme", document);
+            }
+            else {
+                return window.location.assign("login.html");
+            }
+
             return true;
         }
     }
-    window.location.assign("login.html");
+    return window.location.assign("login.html");
 }
 
-// parse cookie named cookie_name (param)
-// if cookie is found, redirect to corresponding theme page
-// if cookie is not found, redirect to login page test.html
+
 function redirectToTheme(cookie_name, document) {
-    console.log("redirectToTheme running");
     let name = cookie_name + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
@@ -33,15 +37,17 @@ function redirectToTheme(cookie_name, document) {
         c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-        let cookie_object = c.substring(name.length, c.length);
-        console.log(cookie_object);
-        if (window.location.href.substring(-1) != cookie_object) {
-            return window.location.assign("http://localhost/theme" + cookie_object);
+        let fullThemeCookie = c.substring(name.length, c.length);
+        if (window.location.href.substring(22, 23) != fullThemeCookie && window.location.href.includes("login") == false) {
+            return window.location.assign("http://localhost/theme" + fullThemeCookie + window.location.href.substring(23));
+        }
+        else if (window.location.href.substring(22, 23) != fullThemeCookie && window.location.href.includes("login") == true) {
+            return window.location.assign("http://localhost/theme" + fullThemeCookie);
         }
         else {
             return true;
         }
         }
     }
-    window.location.assign("login.html");
+    return window.location.assign("login.html");
 }

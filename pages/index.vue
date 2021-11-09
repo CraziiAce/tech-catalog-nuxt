@@ -4,6 +4,9 @@
 
 <script>
 export default {
+  mounted() {
+    checkCookie("session_token", document);
+  },
   head: {
     title: "Logan Tech Catalog",
     meta: [

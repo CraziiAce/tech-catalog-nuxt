@@ -3,7 +3,7 @@
     class="font-extrabold text-center text-7xl pt-8"
     style="font-family: acumin-pro;"
   >
-    Logan Tech Catalog 1
+    Logan Tech Catalog 3
   </h1>
 </template>
 

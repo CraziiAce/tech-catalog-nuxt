@@ -40,7 +40,7 @@ function redirectToTheme(cookie_name, document) {
         if (c.indexOf(name) == 0) {
         let fullThemeCookie = c.substring(name.length, c.length);
         if (window.location.href.substring(-1) != fullThemeCookie && window.location.href.includes("login") == false) {
-            return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie + window.location.href.substring(42));
+            return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie + window.location.href.substring(43));
         }
         else if (window.location.href.substring(-1) != fullThemeCookie && window.location.href.includes("login") == true) {
             return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie);

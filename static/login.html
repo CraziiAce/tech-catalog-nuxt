@@ -16,6 +16,7 @@
     <script>
       function onSuccess(googleUser) {
         let token = googleUser.getAuthResponse().id_token;
+        console.log(token);
         console.log(JSON.stringify({ g_csrf_token: token }));
         console.log("Logged in as: " + googleUser.getBasicProfile().getName());
         fetch("https://tech-catalog-backend.herokuapp.com/login", {

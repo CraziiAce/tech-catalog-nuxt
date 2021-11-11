@@ -1,7 +1,9 @@
 <template>
-  <figure class="rounded-xl border-4 m-12 p-2">
+  <figure class="rounded-xl border-4 m-12 p-2 h-auto">
     <h1 class="text-center">{{ name }}</h1>
-    <img :src="img" :alt="name" class="w-11/12 align-center" />
+    <div class="w-full h-full">
+      <img :src="img" :alt="name" class="w-auto h-auto align-center" />
+    </div>
   </figure>
 </template>
 <script>
@@ -10,7 +12,7 @@ export default {
     img: {
       required: false,
       type: String,
-      default: "https://via.placeholder.com/512"
+      default: "https://via.placeholder.com/720"
     },
     name: {
       required: true,

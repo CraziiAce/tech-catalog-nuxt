@@ -8,7 +8,10 @@
     >
       <catalog-item
         :name="item.name"
-        :img="'https://8g4m6i.deta.dev/get_item_image?item_key=' + item.key"
+        :img="
+          'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
+            item.key
+        "
       ></catalog-item>
     </li>
   </ul>
@@ -22,9 +25,9 @@ export default {
     checkCookie("session_token", document);
   },
   async asyncData() {
-    const items = await fetch("https://8g4m6i.deta.dev/get_items").then(res =>
-      res.json()
-    );
+    const items = await fetch(
+      "https://tech-catalog-backend.herokuapp.com/get_items"
+    ).then(res => res.json());
     return {
       items: items
     };

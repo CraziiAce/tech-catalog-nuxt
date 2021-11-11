@@ -1,4 +1,5 @@
 function checkCookie(cookie_name, document) {
+    console.log("checkCookie firing")
     let name = cookie_name + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');

@@ -15,7 +15,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'http://localhost/redirect.js' }
+      { src: 'https://tech-catalog-nuxt.vercel.app/redirect.js' }
     ]
   },
 

@@ -1,4 +1,4 @@
-async function checkCookie(cookie_name, document) {
+function checkCookie(cookie_name, document) {
     let name = cookie_name + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');

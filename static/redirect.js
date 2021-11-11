@@ -43,7 +43,8 @@ function redirectToTheme(cookie_name, document) {
             return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie + window.location.href.substring(43));
         }
         else if (window.location.href.substring(-1) != fullThemeCookie && window.location.href.includes("login") == true) {
-            return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie);
+            console.log(window.location.href.substring(-1));
+            // return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie);
         }
         else {
             return true;

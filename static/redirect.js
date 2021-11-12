@@ -38,7 +38,6 @@ function redirectToTheme(cookie_name, document) {
         }
         if (c.indexOf(name) == 0) {
         let fullThemeCookie = c.substring(name.length, c.length);
-        console.log(window.location.href.substring(37, 38));
         if (window.location.href.substring(37, 38) != fullThemeCookie && window.location.href.includes("login") == false) {
             return window.location.assign("https://tech-catalog.vercel.app/theme" + fullThemeCookie + window.location.href.substring(38));
         }

@@ -19,14 +19,14 @@ function checkCookie(cookie_name, document) {
             }
             else {
                 console.log("else")
-                // return window.location.assign("login.html");
+                return window.location.assign("login.html");
             }
 
             return true;
         }
     }
     console.log("end checkCookie")
-    // return window.location.assign("login.html");
+    return window.location.assign("login.html");
 }
 
 
@@ -48,7 +48,7 @@ function redirectToTheme(cookie_name, document) {
         }
         else if (window.location.href.substring(43, 44) != fullThemeCookie && window.location.href.includes("login") == true) {
             console.log(window.location.href.substring(43, 44));
-            // return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie);
+            return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie);
         }
         else {
             return true;
@@ -56,5 +56,5 @@ function redirectToTheme(cookie_name, document) {
         }
     }
     console.log("end redirectToTheme")
-    // return window.location.assign("login.html");
+    return window.location.assign("login.html");
 }

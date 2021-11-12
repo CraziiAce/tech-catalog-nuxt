@@ -43,11 +43,11 @@ function redirectToTheme(cookie_name, document) {
         let fullThemeCookie = c.substring(name.length, c.length);
         console.log(window.location.href.substring(42, 43))
         console.log(fullThemeCookie)
-        if (window.location.href.substring(43, 44) != fullThemeCookie && window.location.href.includes("login") == false) {
-            return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie + window.location.href.substring(44));
+        if (window.location.href.substring(42, 43) != fullThemeCookie && window.location.href.includes("login") == false) {
+            return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie + window.location.href.substring(43));
         }
-        else if (window.location.href.substring(43, 44) != fullThemeCookie && window.location.href.includes("login") == true) {
-            console.log(window.location.href.substring(43, 44));
+        else if (window.location.href.substring(42, 43) != fullThemeCookie && window.location.href.includes("login") == true) {
+            console.log(window.location.href.substring(42, 43));
             return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie);
         }
         else {

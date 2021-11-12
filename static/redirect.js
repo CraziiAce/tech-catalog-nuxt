@@ -39,10 +39,10 @@ function redirectToTheme(cookie_name, document) {
         if (c.indexOf(name) == 0) {
         let fullThemeCookie = c.substring(name.length, c.length);
         if (window.location.href.substring(42, 43) != fullThemeCookie && window.location.href.includes("login") == false) {
-            return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie + window.location.href.substring(43));
+            return window.location.assign("https://tech-catalog.vercel.app/theme" + fullThemeCookie + window.location.href.substring(43));
         }
         else if (window.location.href.substring(42, 43) != fullThemeCookie && window.location.href.includes("login") == true) {
-            return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie);
+            return window.location.assign("https://tech-catalog.vercel.app/theme" + fullThemeCookie);
         }
         else {
             return true;

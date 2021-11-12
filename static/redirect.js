@@ -52,3 +52,7 @@ function redirectToTheme(cookie_name, document) {
     }
     return window.location.assign("login.html");
 }
+
+function pageNotFoundRedirect() {
+    window.location.assign("https://tech-catalog.vercel.app/");
+}

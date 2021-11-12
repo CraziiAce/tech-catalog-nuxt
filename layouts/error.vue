@@ -1,10 +1,4 @@
-<template>
-  <div>
-    <h1 v-if="error.statusCode === 404">Page not found</h1>
-    <h1 v-else>An error occurred</h1>
-    <NuxtLink to="/">Home page</NuxtLink>
-  </div>
-</template>
+<template> </template>
 
 <script>
 export default {
@@ -14,7 +8,7 @@ export default {
     script: [{ src: "https://tech-catalog.vercel.app/redirect.js" }]
   },
   mounted() {
-    checkCookie("session_token", document);
+    pageNotFoundRedirect();
   }
 };
 </script>

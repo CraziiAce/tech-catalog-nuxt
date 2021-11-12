@@ -41,7 +41,7 @@ function redirectToTheme(cookie_name, document) {
         }
         if (c.indexOf(name) == 0) {
         let fullThemeCookie = c.substring(name.length, c.length);
-        console.log(window.location.href.substring(-2))
+        console.log(window.location.href.substring(43))
         console.log(fullThemeCookie)
         if (window.location.href.substring(-2) != fullThemeCookie && window.location.href.includes("login") == false) {
             return window.location.assign("https://tech-catalog-nuxt.vercel.app/theme" + fullThemeCookie + window.location.href.substring(-2));

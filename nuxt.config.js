@@ -12,7 +12,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css"}
     ],
     script: [
       { src: 'https://tech-catalog-nuxt.vercel.app/redirect.js' }

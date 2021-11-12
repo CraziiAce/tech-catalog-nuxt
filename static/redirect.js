@@ -18,13 +18,15 @@ function checkCookie(cookie_name, document) {
                 redirectToTheme("theme", document);
             }
             else {
-                return window.location.assign("login.html");
+                console.log("else")
+                // return window.location.assign("login.html");
             }
 
             return true;
         }
     }
-    return window.location.assign("login.html");
+    console.log("end checkCookie")
+    // return window.location.assign("login.html");
 }
 
 
@@ -51,5 +53,6 @@ function redirectToTheme(cookie_name, document) {
         }
         }
     }
-    return window.location.assign("login.html");
+    console.log("end redirectToTheme")
+    // return window.location.assign("login.html");
 }

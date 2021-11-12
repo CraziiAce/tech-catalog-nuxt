@@ -1,6 +1,9 @@
 <template>
   <figure class="rounded-xl border-4 m-12 p-2 h-auto">
-    <h1 class="text-center font-black" style="font-family: acumin-pro;">
+    <h1
+      class="text-center font-black border-black"
+      style="font-family: acumin-pro;"
+    >
       {{ name }}
     </h1>
     <div class="w-full h-full">

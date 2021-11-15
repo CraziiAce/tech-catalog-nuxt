@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="bg-gray-900">
     <li
       v-for="item in items"
       :key="item.key"

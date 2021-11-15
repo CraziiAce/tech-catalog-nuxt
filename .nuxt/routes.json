@@ -3,66 +3,56 @@
     "name": "super_secret_add_item_page",
     "path": "/super_secret_add_item_page",
     "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\super_secret_add_item_page.vue",
-    "chunkName": "pages/super_secret_add_item_page"
+    "chunkName": "pages/super_secret_add_item_page",
+    "_name": "_1e2c207a"
   },
   {
     "name": "theme1",
     "path": "/theme1",
     "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme1\\\\index.vue",
-    "chunkName": "pages/theme1/index"
+    "chunkName": "pages/theme1/index",
+    "_name": "_36449a92"
   },
   {
     "name": "theme2",
     "path": "/theme2",
     "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme2\\\\index.vue",
-    "chunkName": "pages/theme2/index"
+    "chunkName": "pages/theme2/index",
+    "_name": "_3df63ff1"
   },
   {
     "name": "theme3",
     "path": "/theme3",
     "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme3\\\\index.vue",
-    "chunkName": "pages/theme3/index"
-  },
-  {
-    "name": "theme1-catalog",
-    "path": "/theme1/catalog",
-    "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme1\\\\catalog.vue",
-    "chunkName": "pages/theme1/catalog"
-  },
-  {
-    "name": "theme2-catalog",
-    "path": "/theme2/catalog",
-    "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme2\\\\catalog.vue",
-    "chunkName": "pages/theme2/catalog"
-  },
-  {
-    "name": "theme3-catalog",
-    "path": "/theme3/catalog",
-    "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme3\\\\catalog.vue",
-    "chunkName": "pages/theme3/catalog"
+    "chunkName": "pages/theme3/index",
+    "_name": "_45a7e550"
   },
   {
     "name": "theme1-items-id",
     "path": "/theme1/items/:id?",
     "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme1\\\\items\\\\_id.vue",
-    "chunkName": "pages/theme1/items/_id"
+    "chunkName": "pages/theme1/items/_id",
+    "_name": "_1f8e262c"
   },
   {
     "name": "theme2-items-id",
     "path": "/theme2/items/:id?",
     "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme2\\\\items\\\\_id.vue",
-    "chunkName": "pages/theme2/items/_id"
+    "chunkName": "pages/theme2/items/_id",
+    "_name": "_40e2caeb"
   },
   {
     "name": "theme3-items-id",
     "path": "/theme3/items/:id?",
     "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme3\\\\items\\\\_id.vue",
-    "chunkName": "pages/theme3/items/_id"
+    "chunkName": "pages/theme3/items/_id",
+    "_name": "_dce6ae28"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_7a8ba2cc"
   }
 ]

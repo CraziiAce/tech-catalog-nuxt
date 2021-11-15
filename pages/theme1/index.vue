@@ -1,26 +1,36 @@
 <template>
-  <h1
-    class="font-extrabold text-center text-7xl pt-8"
-    style="font-family: acumin-pro;"
-  >
-    Logan Tech Catalog 1
-  </h1>
+  <ul>
+    <li
+      v-for="item in items"
+      :key="item.key"
+      class="lg:w-1/4 md:w-1/3 sm:w-1/2"
+      style="display: inline-block;"
+    >
+      <catalog-item
+        :name="item.name"
+        :img="
+          'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
+            item.key
+        "
+      ></catalog-item>
+    </li>
+  </ul>
 </template>
 
 <script>
+import catalogItem from "./../../components/theme1/catalogItem.vue";
 export default {
+  components: { catalogItem },
   mounted() {
     checkCookie("session_token", document);
   },
-  head: {
-    link: [
-      {
-        rel: "stylesheet",
-        href: "https://use.typekit.net/fbp8sfd.css"
-      }
-    ]
+  async asyncData() {
+    const items = await fetch(
+      "https://tech-catalog-backend.herokuapp.com/get_items"
+    ).then(res => res.json());
+    return {
+      items: items
+    };
   }
 };
 </script>
-
-<style></style>

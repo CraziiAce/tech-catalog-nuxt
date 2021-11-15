@@ -8,9 +8,6 @@ const _1e2c207a = () => interopDefault(import('..\\pages\\super_secret_add_item_
 const _36449a92 = () => interopDefault(import('..\\pages\\theme1\\index.vue' /* webpackChunkName: "pages/theme1/index" */))
 const _3df63ff1 = () => interopDefault(import('..\\pages\\theme2\\index.vue' /* webpackChunkName: "pages/theme2/index" */))
 const _45a7e550 = () => interopDefault(import('..\\pages\\theme3\\index.vue' /* webpackChunkName: "pages/theme3/index" */))
-const _6a606c59 = () => interopDefault(import('..\\pages\\theme1\\catalog.vue' /* webpackChunkName: "pages/theme1/catalog" */))
-const _4c3e35f8 = () => interopDefault(import('..\\pages\\theme2\\catalog.vue' /* webpackChunkName: "pages/theme2/catalog" */))
-const _2e1bff97 = () => interopDefault(import('..\\pages\\theme3\\catalog.vue' /* webpackChunkName: "pages/theme3/catalog" */))
 const _1f8e262c = () => interopDefault(import('..\\pages\\theme1\\items\\_id.vue' /* webpackChunkName: "pages/theme1/items/_id" */))
 const _40e2caeb = () => interopDefault(import('..\\pages\\theme2\\items\\_id.vue' /* webpackChunkName: "pages/theme2/items/_id" */))
 const _dce6ae28 = () => interopDefault(import('..\\pages\\theme3\\items\\_id.vue' /* webpackChunkName: "pages/theme3/items/_id" */))
@@ -43,18 +40,6 @@ export const routerOptions = {
     path: "/theme3",
     component: _45a7e550,
     name: "theme3"
-  }, {
-    path: "/theme1/catalog",
-    component: _6a606c59,
-    name: "theme1-catalog"
-  }, {
-    path: "/theme2/catalog",
-    component: _4c3e35f8,
-    name: "theme2-catalog"
-  }, {
-    path: "/theme3/catalog",
-    component: _2e1bff97,
-    name: "theme3-catalog"
   }, {
     path: "/theme1/items/:id?",
     component: _1f8e262c,

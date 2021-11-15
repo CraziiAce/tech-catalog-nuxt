@@ -8,7 +8,6 @@
         'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
           itemData.key
       "
-      class="img-align-center"
     />
     <p style="font-family: acumin-pro;">{{ itemData.description }}</p>
   </div>

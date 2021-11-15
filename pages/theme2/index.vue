@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import catalogItem from "./../../components/theme1/catalogItem.vue";
+import catalogItem from "./../../components/theme2/catalogItem.vue";
 export default {
   components: { catalogItem },
   mounted() {

@@ -4,7 +4,7 @@
       {{ itemData.name }}
     </h1>
     <img
-      :href="
+      :src="
         'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
           itemData.key
       "

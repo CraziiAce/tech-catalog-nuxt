@@ -12,6 +12,10 @@
           'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
             item.key
         "
+        :id_url="
+          'https://tech-catalog-backend.herokuapp.com/get_item?item_key=' +
+            item.key
+        "
       ></catalog-item>
     </li>
   </ul>

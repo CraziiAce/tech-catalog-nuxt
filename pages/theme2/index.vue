@@ -12,13 +12,17 @@
           'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
             item.key
         "
+        :id_url="
+          'https://tech-catalog-backend.herokuapp.com/get_item?item_key=' +
+            item.key
+        "
       ></catalog-item>
     </li>
   </ul>
 </template>
 
 <script>
-import catalogItem from "./../../components/theme2/catalogItem.vue";
+import catalogItem from "./../../components/theme1/catalogItem.vue";
 export default {
   components: { catalogItem },
   mounted() {

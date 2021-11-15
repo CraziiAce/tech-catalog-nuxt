@@ -1,5 +1,7 @@
 <template>
   <figure class="rounded-xl border-4 m-12 p-2 h-auto">
+    <a :href="id_url"></a>
+
     <h1
       class="text-center font-black border-gray-900"
       style="font-family: acumin-pro;"
@@ -23,6 +25,10 @@ export default {
       required: true,
       type: String,
       default: "Catalog Item"
+    },
+    id_url: {
+      required: true,
+      type: String
     }
   },
   link: [{ rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css" }]

@@ -1,4 +1,4 @@
-<template class="">
+<template class="bg-gray-900">
   <ul>
     <li
       v-for="item in items"

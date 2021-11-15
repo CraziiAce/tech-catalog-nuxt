@@ -1,5 +1,5 @@
 <template>
-  <figure class="rounded-xl border-4 m-12 p-2 h-auto bg-gray-900 text-white">
+  <figure class="rounded-xl border-4 m-12 p-2 h-auto bg-gray-800 text-white">
     <h1 class="text-center font-black " style="font-family: acumin-pro;">
       {{ name }}
     </h1>
@@ -21,7 +21,6 @@ export default {
       type: String,
       default: "Catalog Item"
     }
-  },
-  link: [{ rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css" }]
+  }
 };
 </script>

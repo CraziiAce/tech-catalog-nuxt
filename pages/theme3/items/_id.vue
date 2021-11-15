@@ -1,6 +1,6 @@
 <template>
   <div style="text-align: center;">
-    <h1 class="font-light text-5xl">
+    <h1 class="font-light text-5xl" style="font-family: prometo;">
       {{ itemData.name }}
     </h1>
     <img

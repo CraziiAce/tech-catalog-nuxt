@@ -30,6 +30,9 @@ export default {
       type: String
     }
   },
-  link: [{ rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css" }]
+  link: [{ rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css" }],
+  mounted() {
+    console.log(this.id_url);
+  }
 };
 </script>

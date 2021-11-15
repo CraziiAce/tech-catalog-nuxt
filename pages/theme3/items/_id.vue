@@ -1,6 +1,6 @@
 <template>
-  <div text-align="center">
-    <h1 text-align="center" class="font-extrabold text-5xl">
+  <div style="text-align: center;">
+    <h1 class="font-light text-5xl">
       {{ itemData.name }}
     </h1>
     <img

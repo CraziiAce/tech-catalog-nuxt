@@ -1,5 +1,5 @@
 <template>
-  <figure class="rounded-xl border-4 m-12 p-2 h-auto bg-gray-800 text-white">
+  <figure class="rounded-xl border-4 m-12 p-2 h-auto bg-gray-800 text-gray-50">
     <h1 class="text-center font-black " style="font-family: acumin-pro;">
       {{ name }}
     </h1>

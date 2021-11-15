@@ -2,7 +2,7 @@
   <figure
     class="rounded-xl border-4 m-12 p-2 h-auto bg-gray-800 text-gray-50 border-gray-400"
   >
-    <h1 class="text-center font-black " style="font-family: acumin-pro;">
+    <h1 class="text-center font-black " style="font-family: prometo;">
       {{ name }}
     </h1>
     <div class="w-full h-full">
@@ -23,6 +23,7 @@ export default {
       type: String,
       default: "Catalog Item"
     }
-  }
+  },
+  link: [{ rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css" }]
 };
 </script>

@@ -24,6 +24,7 @@ export default {
       type: String,
       default: "Catalog Item"
     }
-  }
+  },
+  link: [{ rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css" }]
 };
 </script>

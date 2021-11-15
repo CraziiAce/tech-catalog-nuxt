@@ -1,8 +1,15 @@
 <template>
   <div>
-    <h1 class="font-extrabold text-5xl text-center">
+    <h1 text-align="center" class="font-extrabold text-5xl">
       {{ itemData.name }}
     </h1>
+    <img
+      :href="
+        'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
+          itemData.key
+      "
+    />
+    <p>{{ itemData.description }}</p>
   </div>
 </template>
 <script>
@@ -12,7 +19,8 @@ export default {
   },
   async asyncData({ params }) {
     const item = await fetch(
-      "https://8g4m6i.deta.dev/get_item?item_key=" + params.id
+      "https://tech-catalog-backend.herokuapp.com/get_item?item_key=" +
+        params.id
     ).then(res => res.json());
 
     return {

@@ -13,7 +13,8 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css"}
+      { rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css"},
+      {rel:'stylesheet', href:"https://tech-catalog.vercel.app/global.css"}
     ],
     script: [
       { src: 'https://tech-catalog.vercel.app/redirect.js' }

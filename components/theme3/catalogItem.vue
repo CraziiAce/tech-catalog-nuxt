@@ -1,6 +1,8 @@
 <template>
-  <figure class="rounded-none border-4 m-12 p-2 h-auto bg-gray-900 text-white">
-    <h1 class="text-center">{{ name }}</h1>
+  <figure class="rounded-xl border-4 m-12 p-2 h-auto bg-gray-900 text-white">
+    <h1 class="text-center font-black " style="font-family: acumin-pro;">
+      {{ name }}
+    </h1>
     <div class="w-full h-full">
       <img :src="img" :alt="name" class="w-auto h-auto align-center" />
     </div>
@@ -19,6 +21,7 @@ export default {
       type: String,
       default: "Catalog Item"
     }
-  }
+  },
+  link: [{ rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css" }]
 };
 </script>

@@ -1,4 +1,4 @@
-<template>
+<template class="">
   <ul>
     <li
       v-for="item in items"
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import catalogItem from "./../../components/theme1/catalogItem.vue";
+import catalogItem from "./../../components/theme3/catalogItem.vue";
 export default {
   components: { catalogItem },
   mounted() {

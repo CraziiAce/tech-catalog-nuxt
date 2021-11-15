@@ -9,7 +9,7 @@
           itemData.key
       "
     />
-    <p>{{ itemData.description }}</p>
+    <p style="font-family: acumin-pro;">{{ itemData.description }}</p>
   </div>
 </template>
 <script>

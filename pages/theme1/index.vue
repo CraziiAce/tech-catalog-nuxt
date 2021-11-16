@@ -3,7 +3,7 @@
     <li
       v-for="item in items"
       :key="item.key"
-      class="lg:w-1/4 md:w-1/3 sm:w-1/2"
+      class="lg:w-1/4 md:w-1/3 sm:w-1/2 h-max"
       style="display: inline-block;"
     >
       <catalog-item

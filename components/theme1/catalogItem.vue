@@ -1,5 +1,5 @@
 <template>
-  <figure class="rounded-xl border-4 m-12 p-2 lg:h-1/4 md:h-1/3 sm:h-1/2 ">
+  <figure class="rounded-xl border-4 m-12 p-2 lg:h-1/4 md:h-1/3 sm:h-1/2">
     <a :href="id_url"></a>
 
     <h1
@@ -9,7 +9,7 @@
       {{ name }}
     </h1>
     <div class="w-full h-full">
-      <img :src="img" :alt="name" class="w-auto h-auto align-center" />
+      <img :src="img" :alt="name" class="w-max h-max align-center" />
     </div>
   </figure>
 </template>

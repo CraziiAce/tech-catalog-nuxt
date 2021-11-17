@@ -9,13 +9,7 @@
     >
       {{ name }}
     </h1>
-    <div class="w-full h-full">
-      <img
-        :src="img"
-        :alt="name"
-        class="w-11/12 h-11/12 align-center mx-auto"
-      />
-    </div>
+    <img :src="img" :alt="name" class="w-11/12 h-11/12 align-center mx-auto" />
   </figure>
 </template>
 <script>

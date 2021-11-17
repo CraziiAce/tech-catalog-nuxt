@@ -1,9 +1,15 @@
 <template>
   <ul>
-    <li
+    <!-- <li
       v-for="item in items"
       :key="item.key"
       class="lg:h-1/4 lg:w-1/4 md:w-1/4 md:h-1/3 sm:w-2/3 sm:h-1/2 h-max "
+      style="display: inline-block;"
+    > -->
+    <li
+      v-for="item in items"
+      :key="item.key"
+      class="h-72 w-72"
       style="display: inline-block;"
     >
       <catalog-item

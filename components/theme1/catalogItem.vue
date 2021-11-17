@@ -1,5 +1,5 @@
 <template>
-  <figure class="rounded-xl border-4 m-12 p-2">
+  <figure class="rounded-xl border-4 m-12 p-2 w-max h-max">
     <a :href="id_url"></a>
 
     <h1

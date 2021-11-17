@@ -14,10 +14,7 @@
     >
       <catalog-item
         :name="item.name"
-        :img="
-          'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
-            item.key
-        "
+        :img="'https://tech-catalog-images.s3.us-west-1/' + item.key + '.png'"
         :id_url="
           'https://tech-catalog-backend.herokuapp.com/get_item?item_key=' +
             item.key

@@ -10,7 +10,7 @@
       {{ name }}
     </h1>
     <div class="w-full h-full">
-      <img :src="img" :alt="name" class="w-auto h-auto max-w-xs align-center" />
+      <img :src="img" :alt="name" class="w-1/2 h-1/2 align-center" />
     </div>
   </figure>
 </template>

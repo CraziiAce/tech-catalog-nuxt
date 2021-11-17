@@ -1,6 +1,6 @@
 <template>
   <!-- <figure class="rounded-xl border-4 m-12 p-2 lg:w-1/4 md:w-1/3 sm:w-2/3"> -->
-  <figure class="rounded-xl border-4 w-auto pb-2 rounded m-6">
+  <figure class="rounded-xl border-4 w-auto pb-2 rounded m-3">
     <a :href="id_url"></a>
 
     <h1

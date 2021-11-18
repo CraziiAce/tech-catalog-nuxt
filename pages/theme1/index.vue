@@ -9,7 +9,7 @@
     <li
       v-for="item in items"
       :key="item.key"
-      class="h-72 lg:w-1/4 md:w-1/3 sm:w-1/3"
+      class="h-72 lg:w-1/4 md:w-1/3 sm:w-1/3 md:mt-20 sm:mt-16 md:mb-20 sm:mb-16"
       style="display: inline-block;"
     >
       <catalog-item

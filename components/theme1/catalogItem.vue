@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="rounded-xl border-4 w-auto pb-2 rounded sm:m-1.5 md:m-3 md:mt-20 sm:mt-16 md:mb-20 sm:mb-16"
+    class="rounded-xl border-4 w-auto pb-2 rounded sm:m-1.5 md:m-3md:mt-20 sm:mt-16 md:mb-20 sm:mb-16"
   >
     <a :href="id_url"></a>
 

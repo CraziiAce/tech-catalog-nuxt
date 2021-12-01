@@ -3,7 +3,7 @@
     style="text-align: center;"
     class="bg-gray-900 text-gray-50 min-h-screen"
   >
-    <h1 class="font-bold text-5xl" style="font-family: expressway;">
+    <h1 class="font-bold text-5xl mt-3" style="font-family: expressway;">
       {{ itemData.name }}
     </h1>
     <img

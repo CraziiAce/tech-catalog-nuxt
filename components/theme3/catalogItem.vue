@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="rounded-xl border-4 m-12 p-2 h-auto bg-gray-800 text-gray-50 border-gray-400"
+    class="rounded-xl border-4 w-auto pb-2 rounded sm:m-1.5 md:m-3md:mt-20 sm:mt-16 md:mb-20 sm:mb-16 bg-gray-800 text-gray-50 border-gray-400"
   >
     <a :href="id_url">
       <h1 class="text-center font-light " style="font-family: acumin-pro;">

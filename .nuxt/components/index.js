@@ -1,6 +1,6 @@
 export { default as Theme1CatalogItem } from '../..\\components\\theme1\\catalogItem.vue'
-export { default as Theme3CatalogItem } from '../..\\components\\theme3\\catalogItem.vue'
 export { default as Theme2CatalogItem } from '../..\\components\\theme2\\catalogItem.vue'
+export { default as Theme3CatalogItem } from '../..\\components\\theme3\\catalogItem.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

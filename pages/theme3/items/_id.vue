@@ -12,7 +12,7 @@
           itemData.key +
           '.png'
       "
-      class="my-6"
+      class="my-6 justify-center"
     />
     <p style="font-family: acumin-pro;">{{ itemData.description }}</p>
   </div>

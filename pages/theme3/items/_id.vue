@@ -13,7 +13,7 @@
           '.png'
       "
       class="my-6 justify-center"
-      style="margin-left: 20%; margin-right: 20%; width: 60%;"
+      style="margin-left: 25%; margin-right: 25%; width: 50%;"
     />
     <p style="font-family: acumin-pro;">{{ itemData.description }}</p>
   </div>

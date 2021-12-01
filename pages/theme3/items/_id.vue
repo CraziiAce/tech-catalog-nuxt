@@ -1,12 +1,13 @@
-<template>
+<template class="bg-gray-900 text-gray-50">
   <div style="text-align: center;">
     <h1 class="font-bold text-5xl" style="font-family: expressway;">
       {{ itemData.name }}
     </h1>
     <img
       :src="
-        'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
-          itemData.key
+        'https://tech-catalog-images.s3.us-west-1.amazonaws.com/' +
+          itemData.key +
+          '.png'
       "
     />
     <p style="font-family: acumin-pro;">{{ itemData.description }}</p>

@@ -12,7 +12,7 @@
           itemData.key +
           '.png'
       "
-      class="lg:mx-48 md:mx-32 sm:mx-12 mx-24"
+      class="my-6"
     />
     <p style="font-family: acumin-pro;">{{ itemData.description }}</p>
   </div>

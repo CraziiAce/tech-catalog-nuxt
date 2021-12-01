@@ -4,9 +4,10 @@
       {{ itemData.name }}
     </h1>
     <img
-      :href="
-        'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
-          itemData.key
+      :src="
+        'https://tech-catalog-images.s3.us-west-1.amazonaws.com/' +
+          itemData.key +
+          '.png'
       "
     />
     <p>{{ itemData.description }}</p>

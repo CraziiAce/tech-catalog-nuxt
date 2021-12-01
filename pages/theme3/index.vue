@@ -9,8 +9,9 @@
       <catalog-item
         :name="item.name"
         :img="
-          'https://tech-catalog-backend.herokuapp.com/get_item_image?item_key=' +
-            item.key
+          'https://tech-catalog-images.s3.us-west-1.amazonaws.com/' +
+            item.key +
+            '.png'
         "
         :id_url="'https://tech-catalog.vercel.app/theme3/items/' + item.key"
       ></catalog-item>

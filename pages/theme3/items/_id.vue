@@ -1,5 +1,5 @@
-<template class="bg-gray-900 text-gray-50">
-  <div style="text-align: center;">
+<template>
+  <div style="text-align: center;" class="bg-gray-900 text-gray-50">
     <h1 class="font-bold text-5xl" style="font-family: expressway;">
       {{ itemData.name }}
     </h1>

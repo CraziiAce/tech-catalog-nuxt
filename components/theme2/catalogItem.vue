@@ -1,6 +1,7 @@
 <template>
   <figure
     class="rounded-xl border-4 w-auto pb-2 rounded sm:m-1.5 md:m-3md:mt-20 sm:mt-16 md:mb-20 sm:mb-16 border-blue-300"
+    style="background-color: #F3F7F0;"
   >
     <a :href="id_url"></a>
 

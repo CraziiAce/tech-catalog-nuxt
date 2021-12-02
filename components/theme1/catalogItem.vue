@@ -2,15 +2,15 @@
   <figure
     class="rounded-xl border-4 w-auto pb-2 rounded sm:m-1.5 md:m-3md:mt-20 sm:mt-16 md:mb-20 sm:mb-16"
   >
-    <a :href="id_url"></a>
-
-    <h1
-      class="text-center font-normal border-gray-900"
-      style="font-family: acumin-pro;"
-    >
-      {{ name }}
-    </h1>
-    <img :src="img" :alt="name" class="w-11/12 h-11/12 align-center mx-auto" />
+    <a :href="id_url"
+      ><h1
+        class="text-center font-normal border-gray-900"
+        style="font-family: acumin-pro;"
+      >
+        {{ name }}
+      </h1>
+      <img :src="img" :alt="name" class="w-11/12 h-11/12 align-center mx-auto"
+    /></a>
   </figure>
 </template>
 <script>

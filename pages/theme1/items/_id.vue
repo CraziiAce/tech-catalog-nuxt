@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1 text-align="center" class="font-extrabold text-5xl">
+  <div class="min-h-screen">
+    <h1 text-align="center" class="font-extrabold text-5xl mt-3">
       {{ itemData.name }}
     </h1>
     <img
@@ -9,6 +9,8 @@
           itemData.key +
           '.png'
       "
+      class="my-6 justify-center"
+      style="margin-left: 25%; margin-right: 25%; width: 50%;"
     />
     <p>{{ itemData.description }}</p>
   </div>

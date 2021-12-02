@@ -13,7 +13,7 @@
             item.key +
             '.png'
         "
-        :id_url="'https://tech-catalog.vercel.app/theme3/items/' + item.key"
+        :id_url="'https://tech-catalog.vercel.app/theme2/items/' + item.key"
       ></catalog-item>
     </li>
   </ul>

@@ -19,10 +19,7 @@
             item.key +
             '.png'
         "
-        :id_url="
-          'https://tech-catalog-backend.herokuapp.com/get_item?item_key=' +
-            item.key
-        "
+        :id_url="'https://tech-catalog.vercel.app/theme3/items/' + item.key"
       ></catalog-item>
     </li>
   </ul>

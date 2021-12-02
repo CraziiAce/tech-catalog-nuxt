@@ -5,7 +5,7 @@
     <a :href="id_url"></a>
 
     <h1
-      class="text-center font-black border-gray-900"
+      class="text-center font-bold border-gray-900"
       style="font-family: acumin-pro;"
     >
       {{ name }}

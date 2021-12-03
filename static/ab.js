@@ -1,6 +1,6 @@
 async function pageLoad(document) {
     const event = await fetch(
-        "https://akx6sp.deta.dev/",
+        "https://tech-catalog-backend.herokuapp.com/record_event",
         {
           method: "POST",
           body: JSON.stringify({

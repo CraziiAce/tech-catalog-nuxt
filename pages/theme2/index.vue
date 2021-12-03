@@ -25,7 +25,7 @@ export default {
   components: { catalogItem },
   mounted() {
     checkCookie("session_token", document);
-    const items = await fetch(
+    /* const event = await fetch(
       "https://tech-catalog-backend.herokuapp.com/record_event", {
         method: "POST",
         body: JSON.stringify({
@@ -35,11 +35,24 @@ export default {
           "session_token": document.cookie("session_token"),
         })
       }
-    ).then(res => res.json());
+    ).then(res => res.json()); */
   },
   async asyncData() {
     const items = await fetch(
       "https://tech-catalog-backend.herokuapp.com/get_items"
+    ).then(res => res.json());
+
+    const event = await fetch(
+      "https://tech-catalog-backend.herokuapp.com/record_event",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          theme: "theme2",
+          time: Date.now(),
+          event: "page_view",
+          session_token: document.cookie("session_token")
+        })
+      }
     ).then(res => res.json());
     return {
       items: items

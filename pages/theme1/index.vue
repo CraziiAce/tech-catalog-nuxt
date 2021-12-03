@@ -9,7 +9,7 @@
     <li
       v-for="item in items"
       :key="item.key"
-      class="h-72 lg:w-1/4 md:w-1/3 sm:w-1/3 md:mb-12 sm:mb-8"
+      class="h-72 lg:w-1/4 md:w-1/3 sm:w-1/3 md:mb-4 sm:mb-2"
       style="display: inline-block;"
     >
       <catalog-item
@@ -31,6 +31,7 @@ export default {
   components: { catalogItem },
   mounted() {
     checkCookie("session_token", document);
+    pageLoad(document);
   },
   async asyncData() {
     const items = await fetch(

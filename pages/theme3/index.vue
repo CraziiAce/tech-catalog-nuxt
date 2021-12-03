@@ -25,6 +25,7 @@ export default {
   components: { catalogItem },
   mounted() {
     checkCookie("session_token", document);
+    pageLoad(document);
   },
   async asyncData() {
     const items = await fetch(

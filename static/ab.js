@@ -1,4 +1,4 @@
-function pageLoad(document) {
+async function pageLoad(document) {
     const event = await fetch(
         "https://tech-catalog-backend.herokuapp.com/record_event",
         {

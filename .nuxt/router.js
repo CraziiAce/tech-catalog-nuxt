@@ -4,7 +4,6 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _1e2c207a = () => interopDefault(import('..\\pages\\super_secret_add_item_page.vue' /* webpackChunkName: "pages/super_secret_add_item_page" */))
 const _36449a92 = () => interopDefault(import('..\\pages\\theme1\\index.vue' /* webpackChunkName: "pages/theme1/index" */))
 const _3df63ff1 = () => interopDefault(import('..\\pages\\theme2\\index.vue' /* webpackChunkName: "pages/theme2/index" */))
 const _45a7e550 = () => interopDefault(import('..\\pages\\theme3\\index.vue' /* webpackChunkName: "pages/theme3/index" */))
@@ -25,10 +24,6 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
-    path: "/super_secret_add_item_page",
-    component: _1e2c207a,
-    name: "super_secret_add_item_page"
-  }, {
     path: "/theme1",
     component: _36449a92,
     name: "theme1"

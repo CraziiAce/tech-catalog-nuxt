@@ -14,7 +14,8 @@ async function pageLoad(document) {
         "time": Date.now().toString(),
         "event": "page_view",
         "session_token": document.cookie.split("session_token=")[1].split(";")[0],
-        "client_ip": client_ip.ip
+        "client_ip": client_ip.ip,
+        "url": window.location.href
       })
     }
   ).then(res => res.json());

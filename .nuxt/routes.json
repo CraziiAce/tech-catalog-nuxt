@@ -1,11 +1,5 @@
 [
   {
-    "name": "super_secret_add_item_page",
-    "path": "/super_secret_add_item_page",
-    "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\super_secret_add_item_page.vue",
-    "chunkName": "pages/super_secret_add_item_page"
-  },
-  {
     "name": "theme1",
     "path": "/theme1",
     "component": "C:\\\\Users\\\\teddy\\\\Code\\\\tech-catalog-nuxt\\\\pages\\\\theme1\\\\index.vue",

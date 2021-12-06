@@ -17,13 +17,13 @@ function checkCookie(cookie_name, document) {
                 redirectToTheme("theme", document);
             }
             else {
-                return window.location.assign("login.html");
+                return window.location.assign("https://tech-catalog.vercel.app/login.html");
             }
 
             return true;
         }
     }
-    return window.location.assign("login.html");
+    return window.location.assign("https://tech-catalog.vercel.app/login.html");
 }
 
 
@@ -49,7 +49,7 @@ function redirectToTheme(cookie_name, document) {
         }
         }
     }
-    return window.location.assign("login.html");
+    return window.location.assign("https://tech-catalog.vercel.app/login.html");
 }
 
 function pageNotFoundRedirect() {

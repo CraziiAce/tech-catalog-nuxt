@@ -49,5 +49,16 @@ export default {
   
   modules: [
     '@nuxtjs/axios',
-  ]
+    '@nuxtjs/markdownit',
+  ],
+
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    use: [
+      'markdown-it-div',
+      'markdown-it-attrs'
+    ]
+  }
 }

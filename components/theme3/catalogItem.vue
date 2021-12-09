@@ -6,9 +6,11 @@
       <h1 class="text-center font-light " style="font-family: acumin-pro;">
         {{ name }}
       </h1>
-      <div class="w-full h-full">
-        <img :src="img" :alt="name" class="w-auto h-auto align-center" />
-      </div>
+      <img
+        :src="img"
+        :alt="name"
+        class="w-11/12 h-11/12 align-center mx-auto"
+      />
     </a>
   </figure>
 </template>

@@ -22,7 +22,6 @@
 export default {
   mounted() {
     checkCookie("session_token", document);
-    pageLoad(document);
   },
   async asyncData({ params }) {
     const item = await fetch(

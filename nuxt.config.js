@@ -17,7 +17,6 @@ export default {
     ],
     script: [
       { src: 'https://tech-catalog.vercel.app/redirect.js' },
-      { src: 'https://tech-catalog.vercel.app/ab.js' }
     ]
   },
 

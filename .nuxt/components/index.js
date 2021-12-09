@@ -1,6 +1,6 @@
-export { default as Theme2CatalogItem } from '../..\\components\\theme2\\catalogItem.vue'
-export { default as Theme1CatalogItem } from '../..\\components\\theme1\\catalogItem.vue'
-export { default as Theme3CatalogItem } from '../..\\components\\theme3\\catalogItem.vue'
+export const Theme1CatalogItem = () => import('../..\\components\\theme1\\catalogItem.vue' /* webpackChunkName: "components/theme1-catalog-item" */).then(c => wrapFunctional(c.default || c))
+export const Theme2CatalogItem = () => import('../..\\components\\theme2\\catalogItem.vue' /* webpackChunkName: "components/theme2-catalog-item" */).then(c => wrapFunctional(c.default || c))
+export const Theme3CatalogItem = () => import('../..\\components\\theme3\\catalogItem.vue' /* webpackChunkName: "components/theme3-catalog-item" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

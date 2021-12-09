@@ -14,6 +14,7 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_01f93daf from 'nuxt_plugin_plugin_01f93daf' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_markdownit_4ecb9d6c from 'nuxt_plugin_markdownit_4ecb9d6c' // Source: .\\markdownit.js (mode: 'all')
 import nuxt_plugin_axios_3956ff5c from 'nuxt_plugin_axios_3956ff5c' // Source: .\\axios.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -213,6 +214,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_01f93daf === 'function') {
     await nuxt_plugin_plugin_01f93daf(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_markdownit_4ecb9d6c === 'function') {
+    await nuxt_plugin_markdownit_4ecb9d6c(app.context, inject)
   }
 
   if (typeof nuxt_plugin_axios_3956ff5c === 'function') {

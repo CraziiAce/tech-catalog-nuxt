@@ -1,9 +1,9 @@
 {
-  "Theme2CatalogItem": {
-    "description": "Auto imported from components/theme2/catalogItem.vue"
-  },
   "Theme1CatalogItem": {
     "description": "Auto imported from components/theme1/catalogItem.vue"
+  },
+  "Theme2CatalogItem": {
+    "description": "Auto imported from components/theme2/catalogItem.vue"
   },
   "Theme3CatalogItem": {
     "description": "Auto imported from components/theme3/catalogItem.vue"

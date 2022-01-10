@@ -24,6 +24,7 @@ import catalogItem from "./../../components/theme2/catalogItem.vue";
 export default {
   components: { catalogItem },
   mounted() {
+    console.log("mounted");
     checkCookie("session_token", document);
     let items = [];
     let categories = [];

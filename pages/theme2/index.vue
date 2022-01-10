@@ -43,7 +43,6 @@ export default {
         categories.push(value);
       }
     }
-    console.log(categories)
     return {
       items: items,
       categories: categories,

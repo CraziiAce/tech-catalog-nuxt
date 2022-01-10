@@ -31,10 +31,7 @@ export default {
 
     (async () => {
       let res = await fetch(
-        "https://tech-catalog-backend.herokuapp.com/get_items",
-        {
-          mode: "no-cors"
-        }
+        "https://tech-catalog-backend.herokuapp.com/get_items"
       );
       items = await res.json();
     })();

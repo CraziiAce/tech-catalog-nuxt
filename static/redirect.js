@@ -75,8 +75,7 @@ const event = await fetch(
         "session_token": document.cookie.split("session_token=")[1].split(";")[0],
         "client_ip": client_ip.ip,
         "url": window.location.href
-    }),
-    mode: "no-cors",
+    })
     }
 ).then(res => res.json());
 }

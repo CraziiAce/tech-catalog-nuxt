@@ -78,4 +78,6 @@ const event = await fetch(
     })
     }
 ).then(res => res.json());
+console.log(event);
+    console.log(event);
 }

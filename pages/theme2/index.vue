@@ -27,7 +27,7 @@ export default {
     console.log("mounted");
     checkCookie("session_token", document);
     let items = [];
-    let categories = ["all"];
+    let categories = [];
 
     (async () => {
       let res = await fetch(
@@ -38,7 +38,7 @@ export default {
       );
       items = await res.json();
     })();
-    console.log(items);
+
     items.forEach(item => {
       item.categories = item.categories.split(", ");
 

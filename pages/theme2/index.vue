@@ -25,30 +25,28 @@ export default {
   components: { catalogItem },
   mounted() {
     checkCookie("session_token", document);
-    let items = [];
-    let categories = [];
+    const res = await fetch(
+      "https://tech-catalog-backend.herokuapp.com/get_items"
+    );
+    let items = await res.json();
 
-    (async () => {
-      let res = await fetch(
-        "https://tech-catalog-backend.herokuapp.com/get_items"
-      );
-      items = await res.json();
-    })();
+    let categories = ["all"];
 
-    items.forEach(item => {
-      item.categories = item.categories.split(", ");
+    items.forEach(iter)
 
-      item.categories.forEach(category => {
-        if (!categories.includes(category)) {
-          categories.push(category);
-        }
-      });
-    });
-
-    console.log(categories);
+    function iter(value) {
+      value = value['categories'].split(', ');
+      value.forEach(checkCategories);
+    }
+    function checkCategories(value) {
+      if (!categories.includes(value)) {
+        categories.push(value);
+      }
+    }
+    console.log(categories)
     return {
       items: items,
-      categories: categories
+      categories: categories,
     };
   },
   methods: {

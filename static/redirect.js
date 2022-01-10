@@ -17,13 +17,13 @@ function checkCookie(cookie_name, document) {
                 redirectToTheme("theme", document);
             }
             else {
-                return window.location.assign("https://catalog.theloganschool.org/login.html");
+                return window.location.assign("https://tech-catalog.vercel.app/login.html");
             }
             pageLoad(document);
             return true;
         }
     }
-    return window.location.assign("https://catalog.theloganschool.org/login.html");
+    return window.location.assign("https://tech-catalog.vercel.app/login.html");
 }
 
 
@@ -39,10 +39,10 @@ function redirectToTheme(cookie_name, document) {
         if (c.indexOf(name) == 0) {
         let fullThemeCookie = c.substring(name.length, c.length);
         if (window.location.href.substring(37, 38) != fullThemeCookie && window.location.href.includes("login") == false) {
-            return window.location.assign("https://catalog.theloganschool.org/theme" + fullThemeCookie + window.location.href.substring(38));
+            return window.location.assign("https://tech-catalog.vercel.app/theme" + fullThemeCookie + window.location.href.substring(38));
         }
         else if (window.location.href.substring(37, 38) != fullThemeCookie && window.location.href.includes("login") == true) {
-            return window.location.assign("https://catalog.theloganschool.org/theme" + fullThemeCookie);
+            return window.location.assign("https://tech-catalog.vercel.app/theme" + fullThemeCookie);
         }
         else {
             pageLoad(document);
@@ -50,11 +50,11 @@ function redirectToTheme(cookie_name, document) {
         }
         }
     }
-    return window.location.assign("https://catalog.theloganschool.org/login.html");
+    return window.location.assign("https://tech-catalog.vercel.app/login.html");
 }
 
 function pageNotFoundRedirect() {
-    window.location.assign("https://catalog.theloganschool.org/");
+    window.location.assign("https://tech-catalog.vercel.app/");
 }
 
 async function pageLoad(document) {

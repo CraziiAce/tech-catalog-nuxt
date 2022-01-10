@@ -16,7 +16,7 @@ export default {
       { rel: "stylesheet", href: "https://use.typekit.net/fbp8sfd.css"},
     ],
     script: [
-      { src: 'https://catalog.theloganschool.org/redirect.js' },
+      { src: 'https://tech-catalog.vercel.app/redirect.js' },
     ]
   },
 

@@ -38,10 +38,10 @@ function redirectToTheme(cookie_name, document) {
         }
         if (c.indexOf(name) == 0) {
         let fullThemeCookie = c.substring(name.length, c.length);
-        if (window.location.href.substring(40, 41) != fullThemeCookie && window.location.href.includes("login") == false) {
+        if (window.location.href.substring(37, 38) != fullThemeCookie && window.location.href.includes("login") == false) {
             return window.location.assign("https://catalog.theloganschool.org/theme" + fullThemeCookie + window.location.href.substring(38));
         }
-        else if (window.location.href.substring(40, 41) != fullThemeCookie && window.location.href.includes("login") == true) {
+        else if (window.location.href.substring(37, 38) != fullThemeCookie && window.location.href.includes("login") == true) {
             return window.location.assign("https://catalog.theloganschool.org/theme" + fullThemeCookie);
         }
         else {

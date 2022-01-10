@@ -19,7 +19,7 @@
         console.log("Logged in as: " + googleUser.getBasicProfile().getName());
         fetch("https://tech-catalog-backend.herokuapp.com/login", {
           method: "POST",
-          mode: "cors",
+          mode: "no-cors",
           headers: {
             "Content-Type": "application/json; charset=utf-8"
           },
